@@ -85,13 +85,13 @@ businesses with cutting edge marketing technology. Please visit their website:
 
 ## Install
 
-You can install [pypi/cefpython3](https://pypi.python.org/pypi/cefpython3)
+You can install [pypi/cefpython3](https://pypi.python.org/pypi/cefpython3-unoffi-linux)
 package using pip tool. On Linux pip 8.1+ is required. You can
 also download packages for offline installation available on the
 [GitHub Releases](../../releases) pages. Command to install with pip:
 
 ```
-pip install cefpython3==66.0
+pip install cefpython3-unofficial-linux==66.0
 ```
 
 
@@ -155,7 +155,7 @@ support old operating systems then choose the v31 release.
 OS | Py2 | Py3 | 32bit | 64bit | Requirements
 --- | --- | --- | --- | --- | ---
 Windows | 2.7 | 3.4 / 3.5 / 3.6 / 3.7 | Yes | Yes | Windows 7+
-Linux | 2.7 | 3.4 / 3.5 / 3.6 / 3.7 | Yes | Yes | Debian 8+, Ubuntu 14.04+,<br> Fedora 24+, openSUSE 13.3+
+Linux | 2.7 | 3.4 / 3.5 / 3.6 / 3.7 / 3.8 / 3.9 | Yes | Yes | Debian 8+, Ubuntu 14.04+,<br> Fedora 24+, openSUSE 13.3+
 Mac | 2.7 | 3.4 / 3.5 / 3.6 / 3.7 | No | Yes | MacOS 10.9+
 
 These platforms are not supported yet:

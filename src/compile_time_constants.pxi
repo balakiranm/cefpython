@@ -3,5 +3,8 @@
 # Type this command to ignore changes to this file:
 #   git update-index --assume-unchanged src/compile_time_constants.pxi
 
-DEF UNAME_SYSNAME = "Windows"
+DEF UNAME_SYSNAME = "Linux"
 DEF PY_MAJOR_VERSION = 3
+cdef extern from "limits.h":
+    cdef int INT_MIN
+    cdef int INT_MAX
