@@ -2,7 +2,8 @@
 
 Table of contents:
 * [Introduction](#introduction)
-* [Sponsors](#sponsors)
+* [Latest releases sponsored by](#latest-releases-sponsored-by)
+  * [Thanks to all sponsors](#thanks-to-all-sponsors)
 * [Install](#install)
 * [Tutorial](#tutorial)
 * [Examples](#examples)
@@ -13,7 +14,6 @@ Table of contents:
   * [v49 release (WinXP/Vista)](#v49-release-winxpvista)
   * [v31 release (old systems)](#v31-release-old-systems)
 * [Support development](#support-development)
-  * [Thanks to sponsors](#thanks-to-sponsors)
   * [Thanks to all](#thanks-to-all)
 * [Seeking new sponsors](#seeking-new-sponsors)
 * [Other READMEs](#other-readmes)
@@ -23,7 +23,7 @@ Table of contents:
 ## Introduction
 
 CEF Python is an open source project founded by
-[Czarek Tomczak](https://drive.google.com/file/d/17xmoT5Z_zTHkVclqPzrs2aAV64Uiu7fh/view)
+[Czarek Tomczak](https://www.linkedin.com/in/czarektomczak/)
 in 2012 to provide Python bindings for the
 [Chromium Embedded Framework](https://bitbucket.org/chromiumembedded/cef) (CEF).
 The Chromium project focuses mainly on Google Chrome application
@@ -49,24 +49,10 @@ frameworks such as PyQt, wxPython, PyGTK, PyGObject, Tkinter, Kivy, Panda3D,
 PyGame, PyOpenGL, PyWin32, PySide and PySDL2.
 
 
-## Sponsors
+## Latest releases sponsored by
 
 <table border="0"><tr>
 <td width="50%" valign="top">
-
-<p align="center">
- <a href="https://lampix.com/">
-  <img src="https://raw.githubusercontent.com/wiki/cztomczak/cefpython/images/lampix360.png">
- </a>
-</p>
-
-Many Thanks to Lampix for sponsoring the
-[v66 release](../../releases/tag/v66.0). Lampix is the first hardware
-and software solution that turns any surface into a smart, augmented reality
-or interactive surface. Please visit their website:
-<a href="https://lampix.com/">Lampix.com</a>
-
-</td><td width="50%" valign="top">
 
 <p align="center">
  <a href="https://www.fivestars.com/">
@@ -74,13 +60,83 @@ or interactive surface. Please visit their website:
  </a>
 </p>
 
-Many thanks to Fivestars for sponsoring the
-[v49 legacy release](../../releases/tag/v49.0). Fivestars helps local
-communities thrive by empowering small
-businesses with cutting edge marketing technology. Please visit their website:
+Thank you to Fivestars for sponsoring the [v66.1 release](../../releases/tag/v66.1)
+with Python 3.8 / 3.9 support. Fivestars helps local communities thrive by empowering
+small businesses with cutting edge marketing technology. Please visit their website:
 <a href="https://www.fivestars.com/">Fivestars.com</a>
 
+</td><td width="50%" valign="top">
+
+<p align="center">
+ <a href="https://lampix.com/">
+  <img src="https://raw.githubusercontent.com/wiki/cztomczak/cefpython/images/lampix360.png">
+ </a>
+</p>
+
+Thank you to Lampix for sponsoring the
+[v66 release](../../releases/tag/v66.0). Lampix is the first hardware
+and software solution that turns any surface into a smart, augmented reality
+or interactive surface. Please visit their website:
+<a href="https://lampix.com/">Lampix.com</a>
+
 </tr></table>
+
+### Thanks to all sponsors
+
+<table>
+ <tr>
+  <td>
+   <div align="center">
+    <a href="https://www.fivestars.com/">
+     <img src="https://raw.githubusercontent.com/wiki/cztomczak/cefpython/images/fivestars200.png">
+    </a><br>
+    <a href="https://www.fivestars.com/">www.fivestars.com</a>
+   </div>
+  </td>
+  <td>
+   <div align="center">
+    <a href="https://lampix.com/">
+     <img src="https://raw.githubusercontent.com/wiki/cztomczak/cefpython/images/lampix200.png">
+    </a><br>
+    <a href="https://lampix.com/">www.lampix.com</a>
+   </div>
+  </td>
+  <td>
+   <div align="center">
+    <a href="http://www.blueplanet.com/">
+     <img src="https://raw.githubusercontent.com/wiki/cztomczak/cefpython/images/cyan_new_logo_200x48.png">
+    </a><br>
+    <a href="http://www.blueplanet.com/">www.blueplanet.com</a>
+   </div>
+  </td>
+ </tr>
+ <tr>
+  <td>
+   <div align="center">
+    <a href="https://highside.io/">
+     <img src="https://raw.githubusercontent.com/wiki/cztomczak/cefpython/images/highside-onlight-200x48.png">
+    </a><br>
+    <a href="https://highside.io/">www.highside.io</a>
+   <div align="center">
+  </td>
+  <td>
+   <div align="center">
+    <a href="http://www.rentouch.ch/">
+     <img src="https://raw.githubusercontent.com/wiki/cztomczak/cefpython/images/rentouch.png">
+    </a><br>
+    <a href="http://www.rentouch.ch/">www.rentouch.ch</a>
+   </div>
+  </td>
+  <td>
+   <div align="center">
+    <a href="https://www.jetbrains.com/pycharm/">
+     <img src="https://raw.githubusercontent.com/wiki/cztomczak/cefpython/images/pycharm.png">
+    </a><br>
+    <a href="https://www.jetbrains.com/pycharm/">www.jetbrains.com</a>
+   </div>
+  </td>
+ <tr>
+</table>
 
 
 ## Install
@@ -131,7 +187,6 @@ See the [README-examples.md](examples/README-examples.md) and
   in the issue. See
   [Most popular issues](../../issues?q=is%3Aissue+is%3Aopen+sort%3Areactions-%2B1-desc)
   sorted by reactions.
-- Wiki pages are deprecated and for v31 only
 
 
 ## Releases
@@ -154,8 +209,13 @@ support old operating systems then choose the v31 release.
 
 OS | Py2 | Py3 | 32bit | 64bit | Requirements
 --- | --- | --- | --- | --- | ---
+<<<<<<< HEAD
 Windows | 2.7 | 3.4 / 3.5 / 3.6 / 3.7 | Yes | Yes | Windows 7+
 Linux | 2.7 | 3.4 / 3.5 / 3.6 / 3.7 / 3.8 / 3.9 | Yes | Yes | Debian 8+, Ubuntu 14.04+,<br> Fedora 24+, openSUSE 13.3+
+=======
+Windows | 2.7 | 3.4 / 3.5 / 3.6 / 3.7 / 3.8 / 3.9 | Yes | Yes | Windows 7+ (Note that Python 3.9 supports Windows 8.1+)
+Linux | 2.7 | 3.4 / 3.5 / 3.6 / 3.7 | Yes | Yes | Debian 8+, Ubuntu 14.04+,<br> Fedora 24+, openSUSE 13.3+
+>>>>>>> 5679f28cec18a57a56e298da2927aac8d8f83ad6
 Mac | 2.7 | 3.4 / 3.5 / 3.6 / 3.7 | No | Yes | MacOS 10.9+
 
 These platforms are not supported yet:
@@ -196,10 +256,11 @@ Mac | 2.7 | No | Yes | Yes | MacOS 10.7+
 
 Additional information for v31.2 release:
 - On Windows/Mac you can install with command: `pip install cefpython3==31.2`
-- Downloads are available on [wiki pages](../../wiki#downloads)
-  and on GitHub Releases tagged [v31.2](../../releases/tag/v31.2).
-- Documentation is on [wiki pages](../../wiki)
+- Downloads are available on the GitHub Releases page tagged
+  [v31.2](../../releases/tag/v31.2).
 - API reference is available in revision [169a1b2](../../tree/169a1b20d3cd09879070d41aab28cfa195d2a7d5/docs/api)
+- Other documentation can be downloaded by cloning the
+  cefpython.wiki repository: `git clone git@github.com:cztomczak/cefpython.wiki.git`
 
 
 ## Support development
@@ -214,71 +275,16 @@ priority.
 <img src='https://raw.githubusercontent.com/wiki/cztomczak/cefpython/images/donate.gif' />
 </a><br><br>
 
-### Thanks to sponsors
-
-<table>
- <tr>
-  <td>
-   <div align="center">
-    <a href="https://www.fivestars.com/">
-     <img src="https://raw.githubusercontent.com/wiki/cztomczak/cefpython/images/fivestars200.png">
-    </a><br>
-    <a href="https://www.fivestars.com/">www.fivestars.com</a>
-   </div>
-  </td>
-  <td>
-   <div align="center">
-    <a href="https://lampix.com/">
-     <img src="https://raw.githubusercontent.com/wiki/cztomczak/cefpython/images/lampix200.png">
-    </a><br>
-    <a href="https://lampix.com/">www.lampix.com</a>
-   </div>
-  </td>
-  <td>
-   <div align="center">
-    <a href="http://www.blueplanet.com/">
-     <img src="https://raw.githubusercontent.com/wiki/cztomczak/cefpython/images/cyan.png">
-    </a><br>
-    <a href="http://www.blueplanet.com/">www.blueplanet.com</a>
-   </div>
-  </td>
- </tr>
- <tr>
-  <td>
-   <div align="center">
-    <a href="https://clearchat.com/">
-     <img src="https://raw.githubusercontent.com/wiki/cztomczak/cefpython/images/clearchat.png">
-    </a><br>
-    <a href="https://clearchat.com/">www.clearchat.com</a>
-   <div align="center">
-  </td>
-  <td>
-   <div align="center">
-    <a href="http://www.rentouch.ch/">
-     <img src="https://raw.githubusercontent.com/wiki/cztomczak/cefpython/images/rentouch.png">
-    </a><br>
-    <a href="http://www.rentouch.ch/">www.rentouch.ch</a>
-   </div>
-  </td>
-  <td>
-   <div align="center">
-    <a href="https://www.jetbrains.com/pycharm/">
-     <img src="https://raw.githubusercontent.com/wiki/cztomczak/cefpython/images/pycharm.png">
-    </a><br>
-    <a href="https://www.jetbrains.com/pycharm/">www.jetbrains.com</a>
-   </div>
-  </td>
- <tr>
-</table>
-
 
 ### Thanks to all
 
+* [2021] Thank you to [Fivestars](https://www.fivestars.com/) for sponsoring
+  the v66.1 release with Python 3.8 / 3.9 support
 * [2018] Thanks to [Fivestars](https://www.fivestars.com/) for sponsoring
   the v49 release for legacy systems (WinXP/Vista)
 * [2018] Many thanks to [Lampix](https://lampix.com/) for sponsoring the v66
   release for all platforms
-* [2017] Many thanks to [ClearChat Inc.](https://clearchat.com/) for sponsoring
+* [2017] Many thanks to [HighSide Inc.](https://highside.io/) for sponsoring
   the v55/v56 releases for all platforms
 * [2016-2018] Thanks to JetBrains for providing an Open Source license for
   [PyCharm](https://www.jetbrains.com/pycharm/)
@@ -317,7 +323,7 @@ notable are:
 
 If your company would like to sponsor CEF Python development efforts then
 please contact
-[Czarek](https://drive.google.com/file/d/17xmoT5Z_zTHkVclqPzrs2aAV64Uiu7fh/view).
+[Czarek](https://www.linkedin.com/in/czarektomczak/).
 Long term sponsorships are welcome and Czarek is open to ideas about
 the project. He would love to spend more time on developing this project,
 but he can't afford doing so in his free time. Currently there is no company

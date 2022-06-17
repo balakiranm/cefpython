@@ -92,8 +92,8 @@ cdef list CefListValueToPyList(
     if nestingLevel > 8:
         raise Exception("CefListValueToPyList(): max nesting level (8)"
                 " exceeded")
-    cdef int index
-    cdef int size = int(cefListValue.get().GetSize())
+    cdef size_t index
+    cdef size_t size = cefListValue.get().GetSize()
     cdef cef_types.cef_value_type_t valueType
     cdef list ret = []
     cdef CefRefPtr[CefBinaryValue] binaryValue
@@ -230,7 +230,7 @@ cdef CefRefPtr[CefListValue] PyListToCefListValue(
     cdef type valueType
     cdef CefRefPtr[CefListValue] ret = CefListValue_Create()
     cdef CefRefPtr[CefBinaryValue] binaryValue
-    cdef int index
+    cdef size_t index
     for index_size_t, value in enumerate(pyList):
         index = int(index_size_t)
         valueType = type(value)
@@ -238,14 +238,9 @@ cdef CefRefPtr[CefListValue] PyListToCefListValue(
             ret.get().SetNull(index)
         elif valueType == bool:
             ret.get().SetBool(index, bool(value))
-        elif valueType == int:
-            ret.get().SetInt(index, int(value))
-        elif valueType == long:
-            # Int32 range is -2147483648..2147483647, we've increased the
-            # minimum size by one as Cython was throwing a warning:
-            # "unary minus operator applied to unsigned type, result still
-            # unsigned".
-            if -2147483647 <= value <= 2147483647:
+        elif valueType == int or valueType == long:  # In Py3 int and long types are the same type.
+            # Int32 range is -2147483648..2147483647
+            if INT_MIN <= value <= INT_MAX:
                 ret.get().SetInt(index, int(value))
             else:
                 # Long values become strings.
@@ -289,7 +284,7 @@ cdef void PyListToExistingCefListValue(
                 " exceeded")
     cdef type valueType
     cdef CefRefPtr[CefListValue] newCefListValue
-    cdef int index
+    cdef size_t index
     for index_size_t, value in enumerate(pyList):
         index = int(index_size_t)
         valueType = type(value)
@@ -297,14 +292,9 @@ cdef void PyListToExistingCefListValue(
             cefListValue.get().SetNull(index)
         elif valueType == bool:
             cefListValue.get().SetBool(index, bool(value))
-        elif valueType == int:
-            cefListValue.get().SetInt(index, int(value))
-        elif valueType == long:
-            # Int32 range is -2147483648..2147483647, we've increased the
-            # minimum size by one as Cython was throwing a warning:
-            # "unary minus operator applied to unsigned type, result still
-            # unsigned".
-            if -2147483647 <= value <= 2147483647:
+        elif valueType == int or valueType == long:  # In Py3 int and long types are the same type.
+            # Int32 range is -2147483648..2147483647
+            if INT_MIN <= value <= INT_MAX:
                 cefListValue.get().SetInt(index, int(value))
             else:
                 # Long values become strings.
@@ -357,14 +347,9 @@ cdef CefRefPtr[CefDictionaryValue] PyDictToCefDictionaryValue(
             ret.get().SetNull(cefKey)
         elif valueType == bool:
             ret.get().SetBool(cefKey, bool(value))
-        elif valueType == int:
-            ret.get().SetInt(cefKey, int(value))
-        elif valueType == long:
-            # Int32 range is -2147483648..2147483647, we've increased the
-            # minimum size by one as Cython was throwing a warning:
-            # "unary minus operator applied to unsigned type, result still
-            # unsigned".
-            if -2147483647 <= value <= 2147483647:
+        elif valueType == int or valueType == long:  # In Py3 int and long types are the same type.
+            # Int32 range is -2147483648..2147483647
+            if INT_MIN <= value <= INT_MAX:
                 ret.get().SetInt(cefKey, int(value))
             else:
                 # Long values become strings.
