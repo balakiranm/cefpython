@@ -1,4 +1,4 @@
-# CEF Python
+# CEF Python Unofficial
 
 Table of contents:
 * [Introduction](#introduction)
@@ -141,13 +141,13 @@ or interactive surface. Please visit their website:
 
 ## Install
 
-You can install [pypi/cefpython3](https://pypi.python.org/pypi/cefpython3)
+You can install [pypi/cefpython3](https://pypi.python.org/pypi/cefpython3-unoffi-linux)
 package using pip tool. On Linux pip 8.1+ is required. You can
 also download packages for offline installation available on the
 [GitHub Releases](../../releases) pages. Command to install with pip:
 
 ```
-pip install cefpython3==66.0
+pip install cefpython3-unofficial-linux==66.0
 ```
 
 
