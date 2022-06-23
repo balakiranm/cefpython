@@ -66,6 +66,7 @@ elif sys.version_info[:2] == (3, 7):
     from .cefpython3.__init__ import cefpython_py37 as cefpython
 elif sys.version_info[:2] == (3, 8):
     # noinspection PyUnresolvedReferences
+    print("Came here and error from here")
     from .cefpython3.__init__ import cefpython_py38 as cefpython
 elif sys.version_info[:2] == (3, 9):
     # noinspection PyUnresolvedReferences
